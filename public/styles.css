@@ -1,0 +1,72 @@
+body {background-color: lab(83.81% -10.89 -11.49);}
+
+.footer 
+{
+    margin-top: 5px;
+    width: 100%;
+    padding: 5px 20%;
+    background: lavender;
+    color:darkorchid;
+    display: flex;
+    box-sizing: border-box;
+} 
+            
+.footer div
+{
+    text-align: center;
+}
+
+.col-1 a
+{
+    display: block;
+    text-decoration: none;
+    color: darkorchid;
+    margin-bottom: 10px;
+}
+
+.col-2
+{
+    flex-grow: 2;
+}
+            
+.col-2 a
+{
+    display: block;
+    text-decoration: none;
+    color: darkorchid;
+    margin-bottom: 10px;
+}
+
+.footer div h2
+{
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    letter-spacing: 1px;
+}
+
+.footerBottom
+{
+    background-color: rgb(234, 158, 234);
+    padding: 1px;
+}
+
+.my-paragraph 
+{
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+}
+
+.navbar
+{
+    margin-left: -50px;
+}
+
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
