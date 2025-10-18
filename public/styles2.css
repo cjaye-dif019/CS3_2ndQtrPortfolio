@@ -2,6 +2,16 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Times New Roman';
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+hr {
+    border-left: 0px;
+    border-right: 0px;
 }
 
 header{
@@ -53,6 +63,7 @@ ul li.active a{
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
 }
 
 .intro h1{
@@ -65,6 +76,10 @@ ul li.active a{
     top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 50px;
 }
 
 .button{
@@ -84,7 +99,7 @@ ul li.active a{
 .sub{
     display: none;
     top: 6%;
-    position: relative;
+    position: absolute;
     min-width: 220px;
     box-sizing: border-box;
 }
