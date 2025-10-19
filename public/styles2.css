@@ -9,11 +9,6 @@ body {
   margin: 0;
 }
 
-hr {
-    border-left: 0px;
-    border-right: 0px;
-}
-
 header{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/taylorbg.jpg);
     height: 100vh;
