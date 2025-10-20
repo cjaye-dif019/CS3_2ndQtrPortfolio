@@ -1,9 +1,10 @@
 body {background-color: lab(83.81% -10.89 -11.49);}
 
 .footer {
-    margin-top: 5px;
-    width: 100%;
-    padding: 10px 5%;
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px 5%;
     background: lavender;
     color: darkorchid;
     display: flex;
@@ -12,6 +13,11 @@ body {background-color: lab(83.81% -10.89 -11.49);}
     box-sizing: border-box;
     text-align: center;
     overflow-x: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .footer .col-1,
@@ -119,4 +125,21 @@ body {background-color: lab(83.81% -10.89 -11.49);}
     list-style: none;
     display: inline-block;
     margin: 0 5px;
+}
+
+.scrolling-text{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
