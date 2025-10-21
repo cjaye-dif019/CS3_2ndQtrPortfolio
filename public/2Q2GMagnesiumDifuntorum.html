@@ -14,13 +14,53 @@
         <script src="script.js" defer></script>
     </head>
 
+    <style>
+ .scrolling-text{
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    display:inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: palevioletred;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: cornflowerblue;
+    color: purple;
+}
+
+ul li.active a{
+    background-color: cornflowerblue;
+    color: purple;
+}       
+    </style>
+
     <body>
         <section style="margin-left: 20px;">
            <div class="navbar">
                 <nav>
                     <ul>
                         <li><a href="https://cjaye-dif019.github.io/CS3_2ndQtrPortfolio/public/TaylorSwiftMainPage.html">Home</a></li>
-                        <li class="active"><a href="https://cjaye-dif019.github.io/CS3_2ndQtrPortfolio/public/2Q1GMagnesiumDifuntorum.html">Biography</a></li>
+                        <li class="active"><a href="https://cjaye-dif019.github.io/CS3_2ndQtrPortfolio/public/2Q2GMagnesiumDifuntorum.html">Biography</a></li>
                         <li><a href="https://calyx-r3ppl328.github.io/CS3_2ndQtrPortfolio/public/2Q1GMagnesiumPatron_DIscography.html">Discography</a></li>
                         <li><a href="https://lalapisay.github.io/2QRepositoryMgPAUIG/public/2Q1G_MGPAUIG.html">Cats</a></li>
                     </ul>
