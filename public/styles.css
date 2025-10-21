@@ -129,7 +129,6 @@ body {
 
 .scrolling-text{
     white-space: nowrap;
-    overflow: hidden;
     animation: scroll-left 20s linear infinite;
 }
 
@@ -142,4 +141,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+ul li{
+    display:inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: palevioletred;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: cornflowerblue;
+    color: purple;
+}
+
+ul li.active a{
+    background-color: cornflowerblue;
+    color: purple;
 }
