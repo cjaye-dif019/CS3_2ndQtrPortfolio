@@ -1,18 +1,22 @@
-body {background-color: lab(83.81% -10.89 -11.49);}
+html {
+    scroll-behavior: smooth;
+}
+
+body {background-color: lab(72.92% -20.71 -27.29);}
 
 .footer {
     margin: 0;
     width: 100vw;
     max-width: 100%;
     padding: 20px 5%;
-    background: lavender;
+    background: rgb(197, 197, 248);
     color: darkorchid;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     box-sizing: border-box;
     text-align: center;
-    overflow-x: auto;
+    overflow: auto;
 }
 
 body {
@@ -55,7 +59,7 @@ body {
     margin: 0 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
     .footer {
         justify-content: flex-start;
     }
@@ -65,6 +69,35 @@ body {
     .footer .col-3 {
         flex: 0 0 auto;
     }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+  img {
+        max-width: 90%;
+        height: auto;
+  }
+
+  iframe {
+        width: 100%;
+        height: auto;
+  }
+
+  table {
+        width: 100%;
+        font-size: 14px;
+  }
+
+  audio {
+        width: 100%;
+  }
+
+  .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+  }
 }
        
 .footer div
@@ -104,7 +137,7 @@ body {
 
 .footerBottom
 {
-    background-color: rgb(234, 158, 234);
+    background-color: rgb(214, 127, 254);
     padding: 1px;
 }
 
@@ -113,14 +146,16 @@ body {
     font-family: Arial;
     font-size: 16px;
     color: black;
-    text-align: justify; /* aligns both sides neatly */
-    line-height: 1.8; /* increases space between lines */
+    text-align: justify;
+    line-height: 1.8;
     margin-bottom: 15px;
 }
 
 .navbar
 {
-    margin-left: -50px;
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 .navbar ul li
@@ -141,7 +176,6 @@ ul li{
 }
 ul li a{
     text-decoration: none;
-    color: palevioletred;
     padding: 5px 20px;
     border: 1px solid transparent;
     transition: 0.5 ease;
@@ -150,9 +184,79 @@ ul li a{
 ul li a:hover{
     background-color: cornflowerblue;
     color: purple;
+    padding: 8px 12px;
+    border-radius: 8px;
 }
 
 ul li.active a{
-            background-color: cornflowerblue;
-            color: purple;
+    background-color: cornflowerblue;
+    color: purple;
+}
+
+.navbar {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/taylorbg2.jpg);  /* Path to your background image */                         /* Make sure the image covers the entire navbar */
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;                     /* Center the background image */
+    padding: 10px 20px;
+    position: relative;
+    border-bottom: 1px solid palevioletred;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: aquamarine;
+    font-family: 'Cambria', serif;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: purple;
+}
+
+.navbar ul li.active a {
+    color: purple;
+    background-color: cornflowerblue;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+@media (max-width: 770px) {
+    .navbar ul {
+        display: none; 
+        background-color: blueviolet;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 15px;
+        border: 3px solid darkblue;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .navbar ul.active {
+        display: flex; 
+  }
+
+  .menu-toggle {
+        display: block;
+  }
 }
