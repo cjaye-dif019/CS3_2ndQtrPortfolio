@@ -2,14 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
-body {background-color: lab(72.92% -20.71 -27.29);}
+body {background-color: lab(74.07% -21.3 -33.13);}
 
 .footer {
     margin: 0;
     width: 100vw;
     max-width: 100%;
     padding: 20px 5%;
-    background: rgb(197, 197, 248);
+    background: rgb(194, 194, 253);
     color: darkorchid;
     display: flex;
     flex-wrap: nowrap;
@@ -81,7 +81,7 @@ body {
   }
 
   iframe {
-        width: 100%;
+        width: auto;
         height: auto;
   }
 
@@ -93,6 +93,32 @@ body {
         flex-direction: column;
         gap: 10px;
   }
+
+    .navbar ul {
+        display: none; 
+        background-color: blueviolet;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 15px;
+        border: 3px solid darkblue;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+  .navbar ul.active {
+        display: flex; 
+     }
+
+  .toggle {
+        display: block;
+    }
+
+    #icon1 {
+        right: 10px; 
+        bottom: 10px; 
+    }
 }
        
 .footer div
@@ -148,9 +174,9 @@ body {
 
 .navbar
 {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
 .navbar ul li
@@ -264,15 +290,15 @@ ul li.active a{
         border: 3px solid darkblue;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-  }
+    }
 
   .navbar ul.active {
         display: flex; 
-  }
+     }
 
   .toggle {
         display: block;
-  }
+    }
 
     #icon1 {
         right: 10px; 
