@@ -85,11 +85,6 @@ body {
         height: auto;
   }
 
-  table {
-        width: 100%;
-        font-size: 14px;
-  }
-
   audio {
         width: 100%;
   }
@@ -194,11 +189,11 @@ ul li.active a{
 }
 
 .navbar {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/taylorbg2.jpg);  /* Path to your background image */                         /* Make sure the image covers the entire navbar */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../assets/taylorbg2.jpg);  
     height: 10vh;
     background-size: cover;
     background-position: center;
-    min-height: 100px;                     /* Center the background image */
+    min-height: 100px;                     
     padding: 10px 20px;
     position: relative;
     border-bottom: 1px solid palevioletred;
@@ -231,11 +226,30 @@ ul li.active a{
     border-radius: 8px;
 }
 
-.menu-toggle {
+.toggle {
     display: none;
     font-size: 26px;
     color: blueviolet;
     cursor: pointer;
+}
+
+#icon1 {
+    position: fixed;          
+    right: 20px;             
+    bottom: 20px;             
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;        
+    color: cornflowerblue;
+    padding: 15px;
+    border-radius: 50%;       
+    transition: 0.3s ease;    
+}
+
+
+#icon1 i {
+    transition: 0.3s ease;   
 }
 
 @media (max-width: 770px) {
@@ -256,7 +270,12 @@ ul li.active a{
         display: flex; 
   }
 
-  .menu-toggle {
+  .toggle {
         display: block;
   }
+
+    #icon1 {
+        right: 10px; 
+        bottom: 10px; 
+    }
 }
