@@ -14,16 +14,16 @@ menuToggle.addEventListener('click', () =>
     const button = document.getElementById("icon1");
     const icon = button.querySelector('i');
 
-    button.addEventListener("click", function () {
-        if (audio.paused) {
-            audio.play();
-            icon.classList.remove("fa-play");  
-            icon.classList.add("fa-pause");   
-        } 
+button.addEventListener("click", function () {
+    if (audio.paused) {
+        audio.play();
+        icon.classList.remove("fa-play");  
+        icon.classList.add("fa-pause");   
+    } 
         
-        else {
-            audio.pause();
-            icon.classList.remove("fa-pause"); 
-            icon.classList.add("fa-play");     
-        }
-    });
+    else {
+        audio.pause();
+        icon.classList.remove("fa-pause"); 
+        icon.classList.add("fa-play");     
+    }
+});
