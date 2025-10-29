@@ -278,6 +278,15 @@ ul li.active a{
     transition: 0.3s ease;   
 }
 
+.glowing-text {
+    color: #b408cb; 
+    text-shadow: 
+        0 0 5px #d8dc64,
+        0 0 10px #d8dc64,
+        0 0 20px #d8dc64,
+        0 0 30px #d8dc64; 
+}
+
 @media (max-width: 770px) {
     .navbar ul {
         display: none; 
